@@ -12,7 +12,8 @@ const Details = () => {
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
             .then(res => res.json())
             .then(data => setDetails(data.meals[0]))
-    }, [])
+    }, []);
+
 
     const clickForBack = () => {
         navigate("/home")
