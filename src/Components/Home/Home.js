@@ -15,12 +15,13 @@ const Home = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setMeals(data.meals))
-    }, [searchValue])
+    }, [searchValue]);
 
     const handleClicked = (e) => {
         const inputTextValue = e.target.value;
         setSearchValue(inputTextValue);
     }
+    
     return (
         <div>
             <InputGroup className="mb-3 w-50 mx-auto mt-3">
