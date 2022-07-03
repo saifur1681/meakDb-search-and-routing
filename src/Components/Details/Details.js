@@ -14,10 +14,9 @@ const Details = () => {
             .then(data => setDetails(data.meals[0]))
     }, []);
 
-
     const clickForBack = () => {
         navigate("/home");
-    }
+    };
 
     return (
         <div>
