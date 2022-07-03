@@ -3,11 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { FormControl, InputGroup, Row } from 'react-bootstrap';
 import Meal from '../Meal/Meal';
 
-
 const Home = () => {
     const [searchValue, setSearchValue] = useState('');
     const [meals, setMeals] = useState([]);
-
 
     useEffect(() => {
         const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`;
@@ -20,7 +18,7 @@ const Home = () => {
     const handleClicked = (e) => {
         const inputTextValue = e.target.value;
         setSearchValue(inputTextValue);
-    }
+    };
 
     return (
         <div>

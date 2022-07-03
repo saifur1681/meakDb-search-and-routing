@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Card, Col } from 'react-bootstrap';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Card, Col } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Meal = (props) => {
     const { idMeal, strMeal, strInstructions, strMealThumb } = props.meal;
@@ -8,7 +8,7 @@ const Meal = (props) => {
 
     const clicked = () => {
         navigate(`/details/${idMeal}`)
-    }
+    };
 
     return (
         <div>
