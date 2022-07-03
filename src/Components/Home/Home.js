@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { Button, Col, FormControl, InputGroup, Row } from 'react-bootstrap';
+import { FormControl, InputGroup, Row } from 'react-bootstrap';
 import Meal from '../Meal/Meal';
 
 
@@ -21,7 +21,7 @@ const Home = () => {
         const inputTextValue = e.target.value;
         setSearchValue(inputTextValue);
     }
-    
+
     return (
         <div>
             <InputGroup className="mb-3 w-50 mx-auto mt-3">
@@ -35,19 +35,14 @@ const Home = () => {
             <div>
                 <Row xs={3} md={3} className="g-4">
                     {
-
                         meals.map(meal => <Meal
                             key={meal.idMeal}
                             meal={meal}
                         />)
-
                     }
                 </Row>
             </div>
-
         </div >
-
-
     );
 };
 
