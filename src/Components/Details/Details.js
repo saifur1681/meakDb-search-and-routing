@@ -16,7 +16,7 @@ const Details = () => {
 
 
     const clickForBack = () => {
-        navigate("/home")
+        navigate("/home");
     }
 
     return (
